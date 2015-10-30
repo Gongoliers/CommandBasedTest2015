@@ -45,9 +45,9 @@ public class DriveTrain extends Subsystem {
 	}
 
 	public void drive(Joystick stick) {
-		if (stick.getRawButton(3)) {
+		if (stick.getRawButton(4)) {
 			robotDrive.mecanumDrive_Cartesian(0.8, 0, 0, 0);
-		} else if (stick.getRawButton(4)) {
+		} else if (stick.getRawButton(3)) {
 			robotDrive.mecanumDrive_Cartesian(-0.8, 0, 0, 0);
 		} else {
 			double throttle = stick.getThrottle();
